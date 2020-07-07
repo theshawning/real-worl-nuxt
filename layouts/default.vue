@@ -8,6 +8,18 @@
 <script>
 import Navbar from "~/components/Navbar"
 export default {
+  head() {
+    return {
+      titleTemplate: '%s - Real World Events',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Where you can find all the events taking place in your neighborhood'
+        }
+      ]
+    }
+  },
   components: {
     Navbar
   }  
@@ -15,13 +27,6 @@ export default {
 </script>
 
 <style>
-/* *,
-*:before,
-*:after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-} */
 html {
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
